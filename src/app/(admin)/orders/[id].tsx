@@ -1,10 +1,11 @@
-import orders from '@/assets/data/orders'
-import Colors from '@/constants/Colors'
+// import orders from '@/assets/data/orders'
+import { Colors } from '@/src/constants/Colors'
+
 import { useOrderDetails, useUpdateOrder } from '@/src/api/orders'
 import OrderItemListItem from '@/src/components/OrderItemListItem'
 import OrderListItem from '@/src/components/OrderListItem'
 import { OrderStatusList } from '@/src/types'
-import { useLocalSearchParams, Stack } from 'expo-router'
+import { Stack, useLocalSearchParams } from 'expo-router'
 import { ActivityIndicator, FlatList, Pressable, SafeAreaView, Text, View } from 'react-native'
 
 export default function OrdersDetailsScreen() {

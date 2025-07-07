@@ -1,15 +1,13 @@
-import { View, Text, Image, StyleSheet, Pressable, SafeAreaView, ActivityIndicator, } from 'react-native'
-import React from 'react'
-import { Stack, useLocalSearchParams, useRouter, Link } from 'expo-router'
-import { useState } from 'react'
-import Button from '@/src/components/Button'
-import { useCart } from '@/src/providers/CartProvider'
-import { PizzaSize } from '@/src/types'
-import { FontAwesome } from '@expo/vector-icons'
-import Colors from '@/constants/Colors'
 import { useProduct } from '@/src/api/products'
 import { defaultPizzaImage } from '@/src/components/ProductListItems'
 import RemoteImage from '@/src/components/RemoteImage'
+import { Colors } from '@/src/constants/Colors'
+import { useCart } from '@/src/providers/CartProvider'
+import { PizzaSize } from '@/src/types'
+import { FontAwesome } from '@expo/vector-icons'
+import { Link, Stack, useLocalSearchParams, useRouter } from 'expo-router'
+import React, { useState } from 'react'
+import { ActivityIndicator, Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native'
 
 
 

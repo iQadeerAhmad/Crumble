@@ -1,16 +1,15 @@
-import { View, Text, StyleSheet, TextInput, Platform, Image, Alert, InteractionManager } from 'react-native'
-import { useEffect, useState } from 'react'
-import Button from '@/src/components/Button'
-import * as Device from 'expo-device';
-import { defaultPizzaImage } from '@/src/components/ProductListItems';
-import Colors from '@/constants/Colors';
-import * as ImagePicker from 'expo-image-picker';
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useDeleteProduct, useInsertProduct, useProduct, useUpdateProduct } from '@/src/api/products';
-import * as FileSystem from 'expo-file-system';
-import { randomUUID } from 'expo-crypto';
+import Button from '@/src/components/Button';
+import { defaultPizzaImage } from '@/src/components/ProductListItems';
+import { Colors } from '@/src/constants/Colors';
 import { supabase } from '@/src/lib/supabase';
 import { decode } from 'base64-arraybuffer';
+import { randomUUID } from 'expo-crypto';
+import * as FileSystem from 'expo-file-system';
+import * as ImagePicker from 'expo-image-picker';
+import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import { useEffect, useState } from 'react';
+import { Alert, Image, InteractionManager, StyleSheet, Text, TextInput, View } from 'react-native';
 
 
 const CreateProductScreen = () => {

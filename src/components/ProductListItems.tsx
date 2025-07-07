@@ -1,8 +1,7 @@
-import { StyleSheet, Image, Pressable } from 'react-native';
+import { Pressable, StyleSheet } from 'react-native';
 
-import EditScreenInfo from '@/src/components/EditScreenInfo';
-import { Text, View } from '@components/Themed';
-import Colors from '@/constants/Colors';
+import { Colors } from '@/src/constants/Colors';
+import { Text } from '@components/Themed';
 
 import { Link, useSegments } from 'expo-router';
 import { Tables } from '../types';

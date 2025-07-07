@@ -1,9 +1,9 @@
-import { View, Text, TextInput, StyleSheet, Alert } from 'react-native';
-import React, { useState } from 'react';
-import Button from '../../components/Button';
-import Colors from '@/constants/Colors';
+import { Colors } from '@/src/constants/Colors';
+import { supabase } from '@/src/lib/supabase';
 import { Link, Stack } from 'expo-router';
-import { supabase } from '@/src/lib/supabase'
+import React, { useState } from 'react';
+import { Alert, StyleSheet, Text, TextInput, View } from 'react-native';
+import Button from '../../components/Button';
 
 const SignUpScreen = () => {
     const [email, setEmail] = useState('');

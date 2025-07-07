@@ -60,6 +60,7 @@
     "@types/react": "~19.0.10",
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
+    "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0",
     "typescript": "~5.8.3"

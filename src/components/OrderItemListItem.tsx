@@ -1,9 +1,8 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { Colors } from '@/src/constants/Colors';
 import React from 'react';
-import Colors from '@/constants/Colors';
-import { OrderItem } from '../types';
-import { defaultPizzaImage } from './ProductListItems';
+import { StyleSheet, Text, View } from 'react-native';
 import { Tables } from '../database.types';
+import { defaultPizzaImage } from './ProductListItems';
 import RemoteImage from './RemoteImage';
 
 type OrderItemListItemProps = {

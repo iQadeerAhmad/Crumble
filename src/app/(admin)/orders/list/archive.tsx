@@ -1,7 +1,7 @@
-import { Text, FlatList, ActivityIndicator, SafeAreaView } from "react-native"
-import orders from "@/assets/data/orders"
-import OrderListItem from "@/src/components/OrderListItem"
+import { ActivityIndicator, FlatList, SafeAreaView, Text } from "react-native";
+// import orders from "@/assets/data/orders"
 import { useAdminOrderLIst } from "@/src/api/orders";
+import OrderListItem from "@/src/components/OrderListItem";
 
 export default function OrdersScreen() {
     const { data: orders, isLoading, error } = useAdminOrderLIst({ archived: true });

@@ -2,6 +2,7 @@
 export default {
     expo: {
         name: "Crumble",
+        scheme: "crumble",
         slug: "crumble",
         plugins: [
             [
